@@ -48,7 +48,7 @@ public class InputView {
     }
 
     private static void validateAnswer(String input) {
-        if (!input.equals(YES) && !input.equals(NO)) {
+        if (!YES.equals(input) && !NO.equals(input)) {
             throw new IllegalArgumentException("y또는 n만 입력 받을 수 있습니다.");
         }
     }
